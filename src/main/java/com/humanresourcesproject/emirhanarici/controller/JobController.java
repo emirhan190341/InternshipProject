@@ -24,6 +24,7 @@ public class JobController {
         return ResponseEntity.ok(jobService.createJob(request));
     }
 
+
     @GetMapping
     public ResponseEntity<List<JobDto>> getAllJobs() {
         return ResponseEntity.ok(jobService.getAllJobs());
