@@ -35,6 +35,8 @@ public class JobController {
         return ResponseEntity.ok(jobService.getOneJobByPosition(position));
     }
 
+
+
     @DeleteMapping("/{code}")
     public ResponseEntity<Void> deleteJob(@PathVariable String code) {
         jobService.deleteJob(code);

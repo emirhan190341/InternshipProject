@@ -44,6 +44,8 @@ public class JobService {
         return JobDto.convertToDto(job);
     }
 
+
+
     public void deleteJob(String code) {
         jobRepository.deleteById(code);
     }
